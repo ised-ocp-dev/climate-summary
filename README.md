@@ -8,26 +8,26 @@ The following instruction will guide you through the build/deployment/running of
 	- Maven (complete setup)
 	- JDK 8
 2) After checking out the project following steps are taken to clean, package, and run the application
-	a) Go to command prompt and navigate to the project directory
-	b) i.e C:\GITHUB-REPOSITORY\ClimateSummary>
-	c) Give command to clean 
-		C:\GITHUB-REPOSITORY\ClimateSummary>mvn clean
-	d) Give command to package to generate executable jar file
-		C:\GITHUB-REPOSITORY\ClimateSummary>mvn package
-	c) To start/run the application perform following steps
-		C:\GITHUB-REPOSITORY\ClimateSummary>cd target		
-		Give the following command to start the application
-		C:\GITHUB-REPOSITORY\ClimateSummary\target>java -jar ClimateSummary-0.0.1-SNAPSHOT.jar
+	- Go to command prompt and navigate to the project directory
+	- i.e C:\GITHUB-REPOSITORY\ClimateSummary>
+	- Give command to clean 
+		-C:\GITHUB-REPOSITORY\ClimateSummary>mvn clean
+	- Give command to package to generate executable jar file
+		-C:\GITHUB-REPOSITORY\ClimateSummary>mvn package
+	- To start/run the application perform following steps
+		-C:\GITHUB-REPOSITORY\ClimateSummary>cd target		
+		-Give the following command to start the application
+		-C:\GITHUB-REPOSITORY\ClimateSummary\target>java -jar ClimateSummary-0.0.1-SNAPSHOT.jar
 
 3) To launch application
-	a) On the browser go to : "localhost:8080/climatesummary" home page
-	b) Provide dates to filter the search results
-	b) Click on any of the link on column "Mean Temp" to get to the summary details page
+	- On the browser go to : "localhost:8080/climatesummary" home page
+	- Provide dates to filter the search results
+	- Click on any of the link on column "Mean Temp" to get to the summary details page
 
 4) For server side validation - steps to reproduce the error
-	a) Enter any bad URL to replicate error 404
+	- Enter any bad URL to replicate error 404
 		i.e. http://localhost:8080/climatesummarys
-	b) Enter following to replicate internal server error (500)
+	- Enter following to replicate internal server error (500)
 	    i.e. http://localhost:8080/climatedetails/20000
 
 ### Reference Documentation
