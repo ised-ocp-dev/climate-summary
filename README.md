@@ -30,6 +30,9 @@ The following instruction will guide you through the build/deployment/running of
 	- Enter following to replicate internal server error (500)
 	    i.e. http://localhost:8080/climatedetails/20000
 
+5) What is covered in this project
+	- Use of Java, Spring Boot, Sring MVC, Thymeleaf, Maven, Logging framework, Use of CSS, Server side validation
+
 ### Reference Documentation
 For further reference, please consider the following sections:
 
