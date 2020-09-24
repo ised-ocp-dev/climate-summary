@@ -1,4 +1,4 @@
-package com.climate.summary.resources;
+package com.climate.summary.controller;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.http.HttpServletRequest;
@@ -11,6 +11,16 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+/**
+ * This is error controller, and it will be used to handle server side errors
+ * Example shown is for error 404 and error 500
+ * 
+ * Error 404 - Bad URL
+ * Error 500 - Internal server error
+ * 
+ * @author KhatriZ
+ *
+ */
 @Controller
 public class ClimateSummaryErrorController implements ErrorController {
 	

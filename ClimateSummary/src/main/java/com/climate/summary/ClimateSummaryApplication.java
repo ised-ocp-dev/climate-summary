@@ -17,9 +17,9 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 
 import com.climate.summary.constants.ClimateSummaryConstants.FileConstants;
-import com.climate.summary.filereader.CSVFileReader;
+import com.climate.summary.filereader.FileReader;
 import com.climate.summary.models.ClimateSummary;
-import com.climate.summary.parser.CSVFileParser;
+import com.climate.summary.parser.FileParser;
 import com.climate.summary.repository.ClimateSummaryRepository;
 
 @SpringBootApplication
@@ -40,14 +40,14 @@ public class ClimateSummaryApplication {
 	InitializingBean sendDatabase() {
 		return () -> {
 
-			List<String> rowList = CSVFileReader.readCSVFile(FileConstants.FILE_NAME);
+			List<String> rowList = FileReader.readCSVFile(FileConstants.FILE_NAME);
 
 			// Remove first element for the columns from CSV file
 			rowList.remove(0);
 
 			if (rowList != null && !rowList.isEmpty()) {
 				for (String aRow : rowList) {
-					ClimateSummary cSummary = CSVFileParser.convertToClimateSummaryBean(aRow);
+					ClimateSummary cSummary = FileParser.convertToClimateSummaryBean(aRow);
 					climateSummaryRepository.save(cSummary);
 				}
 			}

@@ -9,11 +9,24 @@ import org.slf4j.LoggerFactory;
 
 import com.climate.summary.models.ClimateSummary;
 
-public class CSVFileParser {
+/**
+ * This is a generic file parser utility class. This class is used to process the data from 
+ * provided .csv file
+ * 
+ * @author KhatriZ
+ *
+ */
+public class FileParser {
 	
-	private static final Logger LOGGER=LoggerFactory.getLogger(CSVFileParser.class);
+	private static final Logger LOGGER=LoggerFactory.getLogger(FileParser.class);
 
-	
+	/**
+	 * This method will take a single row from the csv file which is comma separted
+	 * This method will split that string with "," as a delimiter and assign each elements
+	 * to the properties of ClimateSummary bean
+	 * @param singleRow
+	 * @return
+	 */
 	public static ClimateSummary convertToClimateSummaryBean(String singleRow) {
 		
 		String array [] = singleRow.split(",",-1);
@@ -37,8 +50,6 @@ public class CSVFileParser {
 		
 		return bean;
 		
-		
 	}
-	
 
 }

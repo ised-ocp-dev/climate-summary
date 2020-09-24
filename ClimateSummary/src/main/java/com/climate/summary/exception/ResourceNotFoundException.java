@@ -2,6 +2,12 @@ package com.climate.summary.exception;
 
 import org.springframework.web.bind.annotation.ResponseStatus;
 
+/**
+ * This is custom exception class use to handle errors
+ * 
+ * @author KhatriZ
+ *
+ */
 @ResponseStatus
 public class ResourceNotFoundException extends RuntimeException {
 	

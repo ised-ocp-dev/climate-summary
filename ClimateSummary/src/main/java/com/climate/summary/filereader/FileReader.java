@@ -10,7 +10,13 @@ import java.util.List;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 
-public class CSVFileReader {
+/**
+ * This class is a generic file reader from file system
+ * 
+ * @author KhatriZ
+ *
+ */
+public class FileReader {
 	
 	public static List<String> readCSVFile(String file) {
 		List<String> list = new ArrayList<String>();
