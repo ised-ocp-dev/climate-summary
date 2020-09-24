@@ -7,9 +7,11 @@ The following instruction will guide you through the build/deployment/running of
 1) Make sure you have following tools installed in your computer
 	- Maven (complete setup)
 	- JDK 8
-2) After checking out the project following steps are taken to clean and package the jar
-	- Go to command prompt and navigate to the project directory
-	- i.e C:\GITHUB-REPOSITORY\ClimateSummary>
+2) After cloning the repositiory and checking out the project , please follow following steps to clean and package the jar
+	- Go to command prompt and navigate to the repository and project directory
+		- i.e C:\GITHUB-REPOSITORY\ClimateSummary>
+			- where GITHUB-REPOSITORY is the repository location and
+			- ClimateSummary is the project directory
 	- Give command to clean i.e. C:\GITHUB-REPOSITORY\ClimateSummary>mvn clean
 	- Give command to package to generate executable jar file i.e. C:\GITHUB-REPOSITORY\ClimateSummary>mvn package
 3) To start/run the application perform following steps
