@@ -9,15 +9,15 @@ The following instruction will guide you through the build/deployment/running of
 	- JDK 8
 2) After cloning the repositiory and checking out the project , please follow following steps to clean and package the jar
 	- Go to command prompt and navigate to the repository and project directory
-		- i.e C:\GITHUB-REPOSITORY\ClimateSummary>
+		- i.e C:\GITHUB-REPOSITORY\ClimateSummary\ClimateSummary>
 			- where GITHUB-REPOSITORY is the repository location and
 			- ClimateSummary is the project directory
-	- Give command to clean i.e. C:\GITHUB-REPOSITORY\ClimateSummary>mvn clean
-	- Give command to package to generate executable jar file i.e. C:\GITHUB-REPOSITORY\ClimateSummary>mvn package
+	- Give command to clean i.e. C:\GITHUB-REPOSITORY\ClimateSummary\ClimateSummary>mvn clean
+	- Give command to package to generate executable jar file i.e. C:\GITHUB-REPOSITORY\ClimateSummary\ClimateSummary>mvn package
 3) To start/run the application perform following steps
-	- Go to command prompt and navigate to target directory i.e. C:\GITHUB-REPOSITORY\ClimateSummary>cd target
+	- Go to command prompt and navigate to target directory i.e. C:\GITHUB-REPOSITORY\ClimateSummary\ClimateSummary>cd target
 	- Give the following command to start the server application
-		- C:\GITHUB-REPOSITORY\ClimateSummary\target>java -jar ClimateSummary-0.0.1-SNAPSHOT.jar
+		- C:\GITHUB-REPOSITORY\ClimateSummary\ClimateSummary\target>java -jar ClimateSummary-0.0.1-SNAPSHOT.jar
 
 4) To launch application
 	- On the browser go to : "localhost:8080/climatesummary" home page
