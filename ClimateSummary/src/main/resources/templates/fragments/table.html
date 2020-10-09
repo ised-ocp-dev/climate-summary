@@ -13,7 +13,7 @@
 	  <tbody>
 	    <tr th:each="history: ${climatehistory}">
 	  		<td class="text-nowrap" th:text="${history.stationName}" />
-	  		<td class="text-nowrap" th:text="${#dates.format(history.tempTaken, 'dd-MM-yyyy')}" />
+	  		<td class="text-nowrap" th:text="${#dates.format(history.tempTaken, 'yyyy-MM-dd')}"></td>
 	  		<td>
 		  		<div th:if="${#strings.isEmpty(history.meanTemp)}">
 		  		<a th:text="#{climate.summary.data.not.available}" title="Click to view climate summary details"
