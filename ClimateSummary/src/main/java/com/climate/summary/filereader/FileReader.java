@@ -25,9 +25,10 @@ public class FileReader {
         String csvRecord = null;
 				
 		BufferedReader csvReader = null;
+		InputStream is = null;
 		
 		try {
-			InputStream is = resource.getInputStream();
+			is = resource.getInputStream();
 			csvReader = new BufferedReader(new InputStreamReader(is, "UTF-8"));
 			while((csvRecord = csvReader.readLine()) != null) {
 				list.add(csvRecord);
@@ -35,7 +36,19 @@ public class FileReader {
 
 		} catch (IOException e) {
 			e.printStackTrace();
-		}
+		} finally {
+			try {
+				if(csvReader != null) {				
+					csvReader.close();
+				}
+				if(is != null) {
+					is.close();
+				}
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
+		
 		
 		
 		return list;
