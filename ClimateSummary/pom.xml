@@ -55,6 +55,18 @@
 			<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
 	</dependencies>
+	
+	<profiles>
+		<profile>
+			<id>openshift</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+			</activation>
+			<build>
+				<finalName>ClimateSummary</finalName>
+			</build>
+		</profile>
+	</profiles>	
 
 	<build>
 		<plugins>
