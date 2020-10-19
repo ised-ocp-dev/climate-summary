@@ -57,7 +57,7 @@
 				<activeByDefault>false</activeByDefault>
 			</activation>
 			<build>
-				<finalName>ClimateSummary</finalName>
+				<finalName>ROOT</finalName>
 			</build>
 		</profile>
 	</profiles>	
