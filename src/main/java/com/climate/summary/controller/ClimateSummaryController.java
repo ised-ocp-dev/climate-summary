@@ -50,7 +50,7 @@ public class ClimateSummaryController extends AbstractController {
 	 * @param model - model
 	 * @return climatesummary
 	 */
-	@GetMapping(value="/climatesummary")
+	@GetMapping(value="/")
 	public String showClimateSummary(@ModelAttribute("csummary") ClimateSummaryBean csummary, Model model) {
 		
 		List<ClimateSummary> rowList = climateSummaryService.getAllClimateSummary();

@@ -84,5 +84,20 @@
 			</plugin>
 		</plugins>
 	</build>
+	
+	<distributionManagement>
+		<repository>
+			<id>${distributionManagement-internal-released-id}</id>
+			<url>${distributionManagement-internal-released-url}</url>
+		</repository>
+		<snapshotRepository>
+			<id>${distributionManagement-internal-snapshots-id}</id>
+			<url>${distributionManagement-internal-snapshots-url}</url>
+		</snapshotRepository>
+		<site>
+			<id>${distributionManagement-site-id}</id>
+			<url>${distributionManagement-site-url-root}${urlPath}</url>
+		</site>
+	</distributionManagement>
 
 </project>
