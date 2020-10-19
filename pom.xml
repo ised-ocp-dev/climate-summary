@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.climate.summary</groupId>
-	<artifactId>ClimateSummary</artifactId>
+	<artifactId>climate-summary</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ClimateSummary</name>
+	<name>climate-summary</name>
 	<description>Demo project for Climate Summary Spring Boot, MVC, Thyme leaf</description>
 
 	<dependencies>
