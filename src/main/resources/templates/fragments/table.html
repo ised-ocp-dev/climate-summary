@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body> 
+ 
+  <table id="tableExample" class="table table-bordered table-striped" th:fragment="table">
+	  <thead>
+		  <tr>
+		  		<th th:text="#{climate.summary.station.name}">   </th>
+		  		<th th:text="#{climate.summary.date}"  > </th>
+		  		<th th:text="#{climate.summary.mean.temp}" >  </th>
+		  	</tr>
+	  </thead>
+	  <tbody>
+	    <tr th:each="history: ${climatehistory}">
+	  		<td class="text-nowrap" th:text="${history.stationName}" />
+	  		<td class="text-nowrap" th:text="${#dates.format(history.tempTaken, 'yyyy-MM-dd')}"></td>
+	  		<td>
+		  		<div th:if="${#strings.isEmpty(history.meanTemp)}">
+		  		<a th:text="#{climate.summary.data.not.available}" title="Click to view climate summary details"
+		  			th:href="@{'/climatedetails/' + ${history.id}}"> View </a>  		
+		  		</div>
+	  		
+		  		<div th:if="${not #strings.isEmpty(history.meanTemp)}">
+		  		<a th:text="${history.meanTemp}" title="Click to view climate summary details"
+		  			th:href="@{'/climatedetails/' + ${history.id}}"> View </a>  			
+		  			
+		  		</div>	
+	  		</td>  		
+	  	</tr>
+	  </tbody>
+	  <tfoot>	  
+	  </tfoot>
+  </table>	
+</body>
+</html>

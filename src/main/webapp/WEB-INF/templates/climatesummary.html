@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+
+  <head>
+    <title>Climate Summary</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!--     <link rel="stylesheet" type="text/css" media="all" 
+          href="../../css/gtvg.css" data-th-href="@{/css/gtvg.css}" /> -->
+  </head>
+
+  <body>
+  
+  <p th:utext="#{climate.summary.table.title}"> </p>
+  
+  <table>
+  	<tr>
+  		<td th:utext="#{climate.summary.station.name}"> </td>
+  		<td th:utext="#{climate.summary.date}"> </td>
+  		<td th:utext="#{climate.summary.mean.temp}"> </td>
+  	</tr>
+  	
+  	<tr th:each="history: ${climatehistory}">
+  		<td th:text="${history.stationName}" />
+  		<td th:text="${history.date}" />
+  		<td th:text="${history.meanTemp}" />
+  	</tr>
+  </table>
+  
+  
+  	
+  	
+  
+   
+  
+  </tbody>
+
+</html>
