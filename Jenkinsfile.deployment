@@ -1,4 +1,4 @@
-@Library(value="COPS-4904") _
+@Library(value="ised-cicd-lib") _
 
 pipeline {
 	agent none
