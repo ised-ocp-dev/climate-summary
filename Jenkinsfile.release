@@ -1,4 +1,4 @@
-@Library('COPS-4904') _
+@Library('ised-cicd-lib') _
 
 pipeline {
 	agent {
