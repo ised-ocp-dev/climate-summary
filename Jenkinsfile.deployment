@@ -1,4 +1,4 @@
-@Library(@COPS-4904) _
+@COPS-4904
 
 pipeline {
 	agent none
